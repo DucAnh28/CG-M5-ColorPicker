@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Angular Color Picker Directive</h1>
+  <hr>
+  <div class="row">
+    <div class="col-md-6">
+      <input
+        [style.background]="colorList[0].value"
+        [(colorPicker)]="colorList[0].value"
+        [cpOKButton] = "true"
+        [cpOKButtonText] = "'Select'"
+        [cpCancelButton] = "true"
+        [cpSaveClickOutside] = "false"
+        [cpDisableInput]="false"
+        [cpAlphaChannel]="'disabled'"
+        [cpOutputFormat]="'hex'"
+        [cpPresetColors]="presetValues"
+        [cpAddColorButton]="true"
+      />
+    </div>
+  </div>
+</div>
